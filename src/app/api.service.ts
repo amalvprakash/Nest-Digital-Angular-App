@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -5,7 +6,10 @@ import { Injectable } from '@angular/core';
 })
 export class ApiService {
 
-  constructor(private api:ApiService) {
-    return 
-   }
+  constructor(private http:HttpClient) {}
+
+  addCourse = (dataToSend:any) => {
+    return this.http.post("https://mylinkurcodesapp.herokuapp.com/addcourse",dataToSend)
+  }
+
 }
