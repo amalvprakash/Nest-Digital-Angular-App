@@ -13,6 +13,7 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AdminHomeComponent } from './admin-home/admin-home.component';
+import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
 
 const myRoute:Routes =[
   {
@@ -49,7 +50,8 @@ const myRoute:Routes =[
     AboutUsComponent,
     ContactUsComponent,
     AdminLoginComponent,
-    AdminHomeComponent
+    AdminHomeComponent,
+    AdminNavbarComponent
   ],
   imports: [
     BrowserModule,
