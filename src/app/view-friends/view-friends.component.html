@@ -1,0 +1,42 @@
+<app-admin-navbar></app-admin-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl 12">
+
+            <div class="row g-3">
+
+
+                    <div *ngFor="let i of friends" class="col col-12 col-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                    <div class="card" >
+                        <img height ="250px" src="https://as1.ftcdn.net/v2/jpg/03/16/12/52/1000_F_316125289_3GTL3Yd9JVQz3Nw50uAEEkOpX6GvK0LE.jpg" class="rounded-circle" alt="...">
+                        <div class="card-body">
+                          <h5 style="text-align:center;" class="card-title">{{i.name}}</h5>
+                          <p class="card-text" >Friend's Name : {{i.friendName}}</p>
+                          <p class="card-text" >Friend's Nickname : {{i.friendName}}</p>
+                          <p class="card-text" >{{i.DescribeYourFriend}}</p>
+                        </div>
+                    </div>
+
+                </div>
+               <!-- <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Friend's Name</th>
+                        <th scope="col">Friend's Nickname</th>
+                        <th scope="col">Friend's Description</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let i of friends">
+                        <td>{{i.name}}</td>
+                        <td>{{i.friendName}}</td>
+                        <td>{{i.friendNickName}}</td>
+                        <td>{{i.DescribeYourFriend}}</td>
+                      </tr>
+                    </tbody>
+                  </table> -->
+
+        </div>
+    </div> 
+
