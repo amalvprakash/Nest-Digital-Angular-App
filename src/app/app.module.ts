@@ -17,6 +17,7 @@ import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
 import { EmployeeLoginComponent } from './employee-login/employee-login.component';
 import { EmployeeRegComponent } from './employee-reg/employee-reg.component';
 import { EmployeehomeComponent } from './employeehome/employeehome.component';
+import { AddCourseComponent } from './add-course/add-course.component';
 
 const myRoute:Routes =[
   {
@@ -69,7 +70,8 @@ const myRoute:Routes =[
     AdminNavbarComponent,
     EmployeeLoginComponent,
     EmployeeRegComponent,
-    EmployeehomeComponent
+    EmployeehomeComponent,
+    AddCourseComponent
   ],
   imports: [
     BrowserModule,
