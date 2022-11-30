@@ -18,7 +18,7 @@ export class EmployeeLoginComponent {
       "username":this.username,
       "password":this.password
     }
-    if (this.username == "1122" && this.password == "password") {
+    if (this.username == "1122" && this.password == "12345") {
       alert("Authentication Success \b Welcome ")
       this.route.navigate(["/employeeHome"])
     } else {

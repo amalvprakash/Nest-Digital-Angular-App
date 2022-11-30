@@ -55,6 +55,10 @@ const myRoute:Routes =[
   {
     path:"employeeHome",
     component:EmployeehomeComponent
+  },
+  {
+    path:"addCourse",
+    component:AddCourseComponent
   }
   ]
 @NgModule({
