@@ -2,19 +2,19 @@
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-
+            <h1 style="font-size: 40px;color: navy;">Employee Login</h1>
             <div class="row g-3">
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
                     <label for="" class="form-label">User Name</label>
-                    <input name="username" [(ngModel)]="username" type="text" class="form-control">
+                    <input required="" name="username" [(ngModel)]="username" type="text" class="form-control">
 
                 </div>
 
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
                     <label for="" class="form-label">Password</label>
-                    <input name="password" [(ngModel)]="password" type="password" class="form-control">
+                    <input required="" name="password" [(ngModel)]="password" type="password" class="form-control">
 
                 </div>
 
@@ -25,7 +25,7 @@
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     
-                    <a href="#" role="button">Register</a>
+                    <a routerLink="/employeeReg" role="button">Register</a>
 
                 </div>
             </div>
