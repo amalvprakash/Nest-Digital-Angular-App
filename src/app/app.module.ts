@@ -16,6 +16,7 @@ import { AdminHomeComponent } from './admin-home/admin-home.component';
 import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
 import { EmployeeLoginComponent } from './employee-login/employee-login.component';
 import { EmployeeRegComponent } from './employee-reg/employee-reg.component';
+import { EmployeehomeComponent } from './employeehome/employeehome.component';
 
 const myRoute:Routes =[
   {
@@ -49,6 +50,10 @@ const myRoute:Routes =[
   {
     path:"employeeReg",
     component:EmployeeRegComponent
+  },
+  {
+    path:"employeeHome",
+    component:EmployeehomeComponent
   }
   ]
 @NgModule({
@@ -63,7 +68,8 @@ const myRoute:Routes =[
     AdminHomeComponent,
     AdminNavbarComponent,
     EmployeeLoginComponent,
-    EmployeeRegComponent
+    EmployeeRegComponent,
+    EmployeehomeComponent
   ],
   imports: [
     BrowserModule,
