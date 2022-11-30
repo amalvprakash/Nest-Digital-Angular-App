@@ -9,6 +9,10 @@ import { HomeNavbarComponent } from './home-navbar/home-navbar.component';
 import { GallaryComponent } from './gallary/gallary.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { AdminLoginComponent } from './admin-login/admin-login.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { AdminHomeComponent } from './admin-home/admin-home.component';
 
 const myRoute:Routes =[
   {
@@ -26,6 +30,14 @@ const myRoute:Routes =[
   {
     path:"contactUs",
     component:ContactUsComponent
+  },
+  {
+    path:"adminLogin",
+    component:AdminLoginComponent
+  },
+  {
+    path:"adminHome",
+    component:AdminHomeComponent
   }
   ]
 @NgModule({
@@ -35,12 +47,16 @@ const myRoute:Routes =[
     HomeNavbarComponent,
     GallaryComponent,
     AboutUsComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    AdminLoginComponent,
+    AdminHomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
