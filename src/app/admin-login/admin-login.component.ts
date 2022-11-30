@@ -18,7 +18,7 @@ export class AdminLoginComponent {
       "password":this.password
     }
     if (this.username == "admin" && this.password == "nestdigital") {
-      alert("Login Successfull\b Welcome Admin")
+      alert("Authentication Success \b Welcome Admin")
       this.route.navigate(["/adminHome"])
 
     } else {
